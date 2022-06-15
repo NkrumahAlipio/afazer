@@ -13,6 +13,7 @@
         "@inertiajs/inertia": "^0.11.0",
         "@inertiajs/inertia-vue3": "^0.6.0",
         "@inertiajs/progress": "^0.2.7",
+        "@intlify/vue-i18n-loader": "^5.0.0",
         "@tailwindcss/forms": "^0.5.0",
         "@tailwindcss/typography": "^0.5.2",
         "@vue/compiler-sfc": "^3.2.31",
@@ -22,6 +23,13 @@
         "postcss": "^8.1.14",
         "tailwindcss": "^3.0.0",
         "vue": "^3.2.31",
+        "vue-i18n": "^9.2.0-beta.36",
         "vue-loader": "^17.0.0"
+    },
+    "dependencies": {
+        "daisyui": "^2.15.2",
+        "moment": "^2.29.3",
+        "vue-flatpickr-component": "^9.0.6",
+        "vuesax": "^4.0.1-alpha.25"
     }
 }

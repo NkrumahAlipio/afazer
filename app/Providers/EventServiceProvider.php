@@ -2,6 +2,12 @@
 
 namespace App\Providers;
 
+use App\Models\File;
+use App\Models\Task;
+use App\Models\User;
+use App\Observers\FileObserver;
+use App\Observers\TaskObserver;
+use App\Observers\UserObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -18,6 +24,12 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+    ];
+
+    protected $observers =[
+        Task::class => [TaskObserver::class],
+        File::class => [FileObserver::class],
+        User::class => [UserObserver::class],
     ];
 
     /**
